@@ -14,6 +14,10 @@ app.get("/", function (req, res) {
   res.render("sites/home");
 });
 
+app.get("/about", function (req, res) {
+	res.render("sites/about");
+});
+
 app.listen(3000, function () {
   console.log(new Array("*").join());
   console.log("STARTED ON localhost:3000");
